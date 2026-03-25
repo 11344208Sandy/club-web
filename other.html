@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WJN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/about.css"> 
+  <link rel="stylesheet" href="css/exps.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/programs.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/specialty.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <link rel="icon" href="img/heart-rate.png" />
+</head>
+<body>
+  <!--header-->
+  <header>
+    <nav>
+      <h3 class="WJN01">CYCUEMC</h3>
+      <a href="#about">社團簡介</a>
+      <a href="#skills">急救推廣</a>
+      <a href="#exps">志工服務</a>
+      <a href="#program">人才培育</a>
+      <a href="#specialty">救護實踐</a>
+      <a href="#specialty">榮譽事蹟</a>
+      <a href="#footer" class="contact">聯絡資訊</a>
+    </nav>
+  </header>
+<!--自我介紹-->
+  <div class="gap" id="about"></div>
+<!--照諞輪播-->
+  <div class="slideshow-container">
+        <div class="mySlides">          
+          <img src="img/wjn.jpg" style="width:100%">          
+        </div>
+    
+        <div class="mySlides">          
+          <img src="img/club-baby.jpg" style="width:100%">          
+        </div>
+    
+        <div class="mySlides">         
+          <img src="img/wjn.jpg" style="width:100%">          
+        </div>
+
+        <!--左右按鈕-->
+        <a class="prev" onclick="plusSlides(-1)"> ⇠ </a>
+        <a class="next" onclick="plusSlides(1)"> ⇢ </a>
+  </div>      
+    
+    <!--顯示圓點-->
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlides(0)"></span>
+      <span class="dot" onclick="currentSlides(1)"></span>
+      <span class="dot" onclick="currentSlides(2)"></span>
+    </div>
+    
+
+    <script>
+    var slideIndex = 0;
+    var timer = null;
+
+    // 初始化：顯示第一張並開啟自動播放
+    showSlides(slideIndex);
+    startTimer();
+
+    // 左右按鈕控制
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+        startTimer(); // 點擊後重新計時，避免剛點完就馬上跳下一張
+    }
+
+    // 圓點控制
+    function currentSlides(n) {
+        showSlides(slideIndex = n); // 直接設定索引，而不是相加
+        startTimer();
+    }
+
+    function showSlides(n) {
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+
+        // 處理索引邊界
+        if (n >= slides.length) { slideIndex = 0; }
+        if (n < 0) { slideIndex = slides.length - 1; }
+
+        // 隱藏所有照片
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        // 移除所有圓點的 active 狀態
+        for (var i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        // 顯示當前照片並激活圓點
+        slides[slideIndex].style.display = "block";
+        if (dots[slideIndex]) { // 防止點擊超出範圍
+            dots[slideIndex].className += " active";
+        }
+    }
+
+    // 自動播放邏輯
+    function startTimer() {
+      clearTimeout(timer); // 清除舊的計時器
+      timer = setTimeout(function() {
+          showSlides(slideIndex += 1); // 自動下一張
+          startTimer(); // 遞歸調用，持續播放
+      }, 4000); // 設定 4 秒換一張
+    } 
+</script>
+
+
+
+
+  
+  <section class="about">
+    <img src="img/wjn.jpg" class="jn"  alt="吳濬恩"/>
+    <article class="about-article">
+      <ul>
+        <li class="aboutme">
+          <h1>吳濬恩</h1>
+          <p>我是就讀中原大學資訊管理學系的吳濬恩!</p>
+          <strong>
+            是<a href="https://www.instagram.com/cycuemc/?__pwa=1">緊急醫療救護社</a></strong>社長，
+            也是一位國家認可的救護員，<br>致力於把興趣變成專長，相信自己擁有無限潛能。<br>
+            擔任救護員與指導員的使命，是想讓所有人在關鍵時刻伸出援手
+        </li>
+        <li class="slogan01"> 讓所有人 「敢救、會救」!</li>
+      </ul>
+      <p class="slogan02">沒有最好只有能更好，相信自己擁有無限潛能</p>
+    </article>
+  </section>
+<!--專業能力-->
+  <div class="gap" id="skills"></div>
+  <section class="wrap skills">
+    <h1 class="skills-EMTh1">專業能力 - EMT-1初級救護員</h1>
+    <div class="skills-item">
+      <article class="skills-article">
+        <p>
+          EMT-1為國家級認可救護員，可跟隨救護車出勤，是歷經56小時的訓練與考核所獲得，
+          已擔任多次運動賽事場邊救護員與跟隨救護車出勤，相信自己的雙手可以拯救自己，拯救他人。
+          目前考取指導員證照中，需上滿16小時課程與實習滿24小時才可獲的證照，而我完成實習後就可擔任基本救命術指導員。<br>
+          圖片為EMT-1結訓考所拍攝。
+        </p>
+      </article>
+      <aside><a href="https://www.instagram.com/cycuemc/?__pwa=1"><img src="img/EMT.jpg" class="emt"  alt="EMT-1"/></a></aside>
+    </div>
+  </section>
+
+<!--個人經歷-->
+  <div class="gap" id="exps"></div>
+    <section class="wrap exps">
+      <!--社團活動!-->
+      <div class="exps-headerclub">
+        <button>
+            <a href="https://www.instagram.com/p/C470CxCLXz1ikOImVFHRCKCIn21JykQ3NlzXg40/?igsh=bTFzOTY0bTJiY3kw" class="ig-link">
+              IG：CYCUEMC
+            </a>
+        </button>
+        <button>
+            <a href="https://www.youtube.com/@cycuemc" class="ig-link">
+              YT：中原大學緊急醫療救護社
+            </a>
+        </button>
+        <h1 class="exps-club">社團活動</h1>
+      </div>
+      <div class="exps-item dashed">
+        <aside>
+          <a href="https://www.instagram.com/cycuemc/?__pwa=1">
+            <img src="img/club-baby.jpg" class="exps-img"  alt="club" />
+          </a>
+        </aside>
+        <article class="exps-article">
+          <p>
+            大一加入緊急醫療救護社並擔任第十屆副社長，如今為第十一屆社長，同時是校園捐血總協，在社團期間累積豐富出勤與教學經驗，
+            本學期安排各式基本急救知識與技能課程，並擔任講師教導社員，在大一擔任副社長期間收穫豐富，
+            並在大二擔任社長時學以致用，本學期已為社團接下2-3起與外校協會合作案，也擔任多起活動講師，推廣急救教育，
+            並在114年11月初為社團榮獲第32屆傑青獎傑出社團，獲獎金、獎牌與總統召見表揚資格，
+            不僅為社團增加知名度，更為學校增添榮譽。<br>
+            在社團期間不僅學會溝通技巧、待人處事，更學會如何成為一位優秀的領導者，目前仍處於學習這項能力中，
+            相信未來的自己會比現在的自己更加優秀，更加努力。<br>
+            圖片為社團為美國克萊門大學交換生所設計2025年暑期實習課程_急救技術培訓課程，
+            而我正在教導急產接生須注意事項以及如何從子宮內正確協助新生兒出生等。
+          </p>
+        </article>
+      </div>
+      <!--工作經驗-->
+      <div class="exps-headerwork">
+        <h1 class="exps-work">工作經驗</h1>
+        <button>
+            <a href="https://www.instagram.com/p/C470CxCLXz1ikOImVFHRCKCIn21JykQ3NlzXg40/?igsh=bTFzOTY0bTJiY3kw" class="ig-link">
+              XTERRA IG貼文
+            </a>
+      </button>
+      </div>
+      <div class="exps-item dashed">
+        <article class="exps-article">
+          <p>
+            高三參加XTERRA志工擔任周邊商品店鋪的銷售員，與選手溝通並推銷商品為他們服務；
+            大一至大二皆在衛生保健組工作，協助櫃台服務、掛號、體健工讀生及負責收取學餐留樣檢體，
+            在學生發生疑似食物中毒事件時可將收回的食物送去檢驗；
+            除了以上兩個也曾因為社團緣故校內單位與校外協會及合作擔任講師，為社區民眾、校內學生等教導急救知識。<br>
+            以上的工作經歷，累積了豐富的社會實務經驗，不僅學習到職場中溝通協調、時間管理與問題解決等核心能力，
+            也培養了在壓力下保持冷靜、有效執行任務的專業態度。
+            透過不斷的實踐與反思，我更加理解團隊合作與責任分工的重要性，
+            並學會在不同情境中靈活應對與自我成長，成為我持續進步與面對挑戰的力量。<br>
+            圖片為與校內單位合作擔任講師教導經濟不利新住民子女報案技巧與流程。
+          </p>
+        </article>
+          <a href="https://www.instagram.com/cycuhealth?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+          <img src="img/work-teacher.jpg" class="exps-img"  alt="work" />
+        </a>
+      </div>
+      <!--課程活動-->
+      <div class="exps-headerclass">
+        <button>
+            <a href="https://www.threads.com/@9.john.tao" class="ig-link">
+              THREADS：九桃有限公司
+            </a>
+        </button>
+        <button>
+            <a href="https://www.youtube.com/@%E4%B9%9D%E6%A1%83%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8" class="ig-link">
+              YT：九桃有限公司
+            </a>
+        </button>
+        <h1 class="exps-class">課程活動</h1>
+      </div>
+      <div class="exps-item">
+        <a href="https://www.youtube.com/@%E4%B9%9D%E6%A1%83%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8">
+          <img src="img/design.jpg" class="exps-img"  alt="class" />
+        </a>
+        <article class="exps-article">
+          <p>
+            在大一下企業概論中，以「桃園一日遊」為主題設計專案，九個人利用養石頭的特色，幫公司取名「九桃有限公司」，
+            意為石頭的台語諧音以及九人桃園專案規劃，
+            期間，與組員一同前往深入大溪區探訪，精選五項休閒景點與餐廳，提供深度旅遊及在地文化體驗，
+            藉由自然生態、在地生活與人文特色的遊憩方式，提供目標客群具沉浸感與文化價值的一日遊體驗。
+            在課程中擔任組長，並為專案設計主視覺與影片剪輯，在與組員共同努力發想與設計下，成功完成「桃園一日遊」的完整企劃提案與成果發表。
+            過程中，學習到如何將創意轉化為具體可行的行銷策略，並運用分工與協調技巧帶領團隊整合各項資源。
+            此專案不僅提升了我在企劃撰寫、視覺設計與影片製作上的專業能力，也讓我深刻體會團隊合作、溝通協調與領導統籌的重要性，
+            為日後跨領域專案執行奠定了良好的基礎。圖片為專案宣傳型錄。
+          </p>
+        </article>
+      </div>
+    </section>
+
+  <!--程式能力-->
+  <div class="gap" id="program"></div>
+    <section class="wrap programs">
+      <div class="title"></div>
+      <article class="bar">
+        <ul type="none">
+          <li>
+            <p>HTML、CSS</p>
+            <div class="scroll html-bar">85%</div>
+          </li>
+          <li>
+            <p>C++</p>
+            <div class="scroll c-bar">80%</div>
+          </li>
+          <li>
+            <p>Java</p>
+            <div class="scroll java-bar">75%</div>
+          </li>
+          <li>
+            <p>Python</p>
+            <div class="scroll py-bar">70%</div>
+          </li>
+          <li>
+            <p>C#</p>
+            <div class="scroll cc-bar">60%</div>
+          </li>
+        </ul>
+      </article>
+      <article class="text">
+        <ul type="none">
+          <li>
+            本學期的多媒體設計課程，讓我學到很多，
+            在過程中會因為好奇而去尋找很多資源幫助自己設定版面與增加書寫技巧，
+            跟其他程式語言相較起來可以達85%，但單獨拿出來則會有所高估，
+            但其中也包蝦對自己得期許，希望日後能持續往上增加
+          </li>
+          <li>
+            C++是在上大一時的那個暑假透過學校開辦的免費課程所學習的程式語言，
+            也是我接觸的第一個程式語言，在學習過程中學到如何撰寫程式，
+            當時因為第一次接觸因此格外認真去學去練，所以可達到80%。
+          </li>
+          <li>
+            JAVA為大學第二個學習的程式，經過大一上的Python課後就熟悉老師的教學方式與程式撰寫技巧，
+            因此學習過程中能較快掌握並從中獲得成就感。透過老師教導用記事本撰寫也讓我會更加細心注意每一個細節，
+            後來接近期末時才自己改用VS code撰寫程式。
+          </li>
+          <li>
+            Python是大學第一堂程式課，剛開始會因為語法跟書寫模式較C++不同而苦惱，
+            也因為不太熟悉導致些許書寫技巧未能完全掌握，希望日後能夠繼續深入學習補回缺失的部分。
+          </li>
+          <li>
+            C#是這學期所選的系選修，學習過程中較艱難且此程式語言較複雜與繁瑣，
+            因此目前仍處於掌握度較低的狀態，
+            期許本學期結束能收獲許多且掌握比現在多的撰寫技巧。
+          </li>
+        </ul>
+      </article>
+    </section>
+  <!--專長-->
+  <div class="gap" id="specialty"></div>
+  <section class="wrap specialty">
+      <h2 class="section-title">專長與技能</h2> 
+      <div class="specialty-grid"> 
+          <article>
+            <img src="img/draw01.jpg" class="specialty-img"  alt="繪畫"/>
+            <h3>繪畫與設計</h3>
+            <p>
+              在小時候就特別喜歡畫圖，長大後逐漸學習更多繪畫技巧；
+              設計方面為自學平面設計、排版等技能，應用在社團海報、企業概論專案主視覺等等。
+            </p>
+          </article>
+          <article>
+            <img src="img/music.jpg" class="specialty-img"  alt="音樂"/>
+            <h3>樂器演奏</h3>
+            <p>
+              自小學三年級開始學習豎笛並加入學校管樂團，後來自己學習了長笛與短笛，
+              在管樂團待久後學會另一項神奇技能，
+              只要給我一種樂器的吹嘴(如小號、上低音號、薩克斯風等等)，
+              就能吹出此樂器至少一個八度的音。
+              圖片為國小三年級假日練習時所拍攝。
+            </p>
+          </article>
+          <article>
+            <img src="img/photo01.jpg" class="specialty-img"  alt="攝影"/>
+            <h3>攝影</h3>
+            <p>
+              從小因為爸媽十分喜歡拍照記錄自己的小孩且家裡有許多台數位相機，
+              因此也在成長過程中喜歡上攝影，
+              目前自己存錢買了人生中第一台屬於自己的相機CANON R10，
+              因為小巧攜帶方便且符合我日常拍攝需求因此選擇此型號。
+              照片為中秋連假期間前往花蓮馬太鞍村時所拍攝。
+            </p>
+          </article>
+          <article>
+            <video width="280"  controls>
+              <source src="video/tenyear.mp4" type="video/mp4">
+            </video>
+            <h3 >影片剪輯</h3>
+            <p>原本是自己喜歡撿旅遊volg後來因為社團的緣故學習更多剪輯技巧，
+            因此從興趣漸漸轉為專長，並以此為社團製作宣傳與花絮影片。
+            影片為社團十週年紀念活動預告片。
+            </p>
+            <div class="Remark">影片前6秒為黑色畫面，僅有背景音</div>
+          </article>
+      </div>
+  </section>
+
+  <!--footer-->
+    <div class="clearfix"></div>
+    <footer id="footer">
+      <p class="WJN02">WJN</p>
+      <p>©2026 by WJN</p>
+      <a href="https://www.instagram.com/cycuemc/?__pwa=1" target="_blank">
+          <img src="img/IG.jpg" alt="IG" />
+      </a>
+        <a href="https://www.facebook.com/CYCUEMC?locale=zh_TW" target="_blank">
+            <img src="img/FB.jpg" alt="FB" />
+        </a>
+      <a href="mailto:cycuemc@gmail.com">
+          <img src="img/email.jpg" alt="Mail" />
+      </a>
+      <a href="#top" class="top">回頂端</a>
+    </footer>
+
+</body>
+</html>

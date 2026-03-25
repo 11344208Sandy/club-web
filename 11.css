@@ -1,0 +1,526 @@
+.main-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:  #efefef;
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 3px 3px 2px #ccc;
+}
+.header-nav {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-nav a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 1em;
+  transform: translateY(0px);
+  transition: 0.3s;
+}
+.header-nav a:hover {
+  font-weight: 700;
+  transform: translateY(-5px);
+}
+.header-nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -5px;
+  height: 0;
+  border-bottom: 1px solid #333;
+  transition: 0.3s;
+}
+.header-nav a:hover::after {
+  left: 0%;
+  right: 0%;
+}
+
+/*about*/
+.aboutme {
+  padding: 50px;
+}
+.aboutme .photos {
+  width: 600px;
+  height: 400px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 3px 3px #aaa;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.aboutme .photos:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 5px 5px #aaa;
+  transition: 0.5s;
+}
+.aboutme h1 {
+  position: absolute;
+  top: 120px;
+  right: 170px;
+  font-size: 32px;
+}
+.aboutme-article {
+  width: 40%;
+  height: 200px;
+  margin-left: 40px;
+}
+.aboutme-article ul {
+  text-align: justify;
+  list-style: none;
+  line-height: 2.5;
+}
+.first-content {
+  margin-top: -10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.first-content a {
+  color:#333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.first-content:hover a {
+  font-size: 20px;
+  color:#f00;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.second-content {
+  font-size: 18px;
+  padding-top: 20px;
+  font-weight: 600;
+  font-family: "標楷體";
+  text-align: center;
+  transition: 0.5s;
+}
+.second-content:hover {
+  padding-top: 18px;
+  font-size: 22px;
+  color: rgb(22, 82, 155);
+  font-weight: 700;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
+.aboutme-motto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 20px;
+  border-right: 2px solid #333;
+  border-left: 2px solid #333;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.aboutme-motto:hover {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-right: 3px solid #333;
+  border-left: 3px solid #333;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+/*exps*/
+#exps {
+  height: 100%;
+  display: block;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 10px 10px #ccc;
+}
+#exps .title {
+  position: relative;
+  width: 100%;
+  height: 140px;
+}
+#exps .title span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  left: -60px;
+  width: 600px;
+  height: 80px;
+  background-color: #c9bc99;
+  box-shadow: 15px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+}
+#exps .title span::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 40px;
+  height: 60px;
+  background-color: #b8ab89;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+#exps .title span::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 35px;
+  height: 80px;
+  z-index: -1;
+  background-color: #c9bc99;
+}
+#exps .title span i {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 30px;
+  color: #eee;
+  text-shadow: 3px 3px 1px #ccc;
+  transform: scale(1);
+  transition: 0.5s;
+}
+#exps .title span i:hover {
+  transform: scale(1.2);
+  letter-spacing: 40px;
+  transition: 0.5s;
+}
+.exps-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.exps-item .pic {
+  width: 55%;
+}
+.exps-item .pic img {
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 0 0 3px 3px #aaa;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.exps-item .pic img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 5px #aaa;
+}
+.exps-text {
+  width: 55%;
+  background-color:rgba(232, 223, 202,0.6);
+  padding: 50px 30px;
+  text-align: center;
+  z-index: 1;
+  border-radius: 30px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.exps-text:hover {
+  transform: scale(1.05);
+  background-color:rgba(232, 223, 202,1);
+  border: 1px solid #333;
+  transition: 0.5s;
+}
+.exps-item h2 {
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 20px;
+  letter-spacing: 10px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.exps-text:hover h2 {
+  font-size: 32px;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.exps-item p {
+  text-align: justify;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.exps-text:hover P {
+  transform: scale(1.05); 
+  transition: 0.5s;
+}
+.exps-item > :first-child {
+  margin-right: -10%;
+}
+
+/*footer*/
+.main-footer {
+  width: 100%;
+  height: 60px;
+  padding: 10px 0;
+  background-color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px 2px #ccc;
+}
+.footer-link {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-link img {
+  color: #666;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.footer-link img:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+.go-top {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.go-top:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+/*main*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', 'Noto Sans', sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+body {
+  background-color: #efefef;
+}
+.gap {
+  width: 100%;
+  height: 100px;
+}
+.wrap {
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50px;
+  background-color: #EEEADA;
+  box-shadow: 3px 3px 5px 5px #ccc;
+  position: relative;
+}
+h1 {
+  font-weight: 700;
+  letter-spacing: 20px;
+  text-shadow: 3px 3px 3px #999;
+}
+
+/*skills */
+.myskills h1 {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  font-size: 40px;
+}
+.skills-item {
+  position: relative;
+  margin: 0 15px;
+  width: 360px;
+  height: 270px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px 3px #ccc;
+  transform: translateY(0px);
+  transition: 0.5s;
+}
+.skills-item:hover {
+  transform: translateY(-50px);
+  transition: 0.5s;
+}
+.skills-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.skills-text, .drop-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  padding: 20px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  text-align: justify;
+  transition: 0.5s;
+}
+.skills-text {
+  top: 0;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+}
+.skills-item:hover .skills-text {
+  opacity: 1;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.drop-text {
+  top: 50%;
+  z-index: -1;
+  transform: translateY(0px);
+  transition: 0.5s;
+}
+.skills-item:hover .drop-text {
+  z-index: 1;
+  transition: 0.5s;
+  transform: translateY(150px);
+}
+/* 效果線條 */
+.skills-text h3 {
+  font-size: 20px;
+  color: #ff0;
+}
+.skills-text h3::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: 10px 0;
+  background-color: #ff0;
+  transition: 0.5s 0.3s;
+}
+.skills-item:hover h3::after {
+  width: 100%;
+}
+.skills-text p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+}
+
+/*programs*/
+.programs .title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  top: -20px;
+  left: -20px;
+  overflow: hidden;
+}
+.programs .title::before {
+  position: absolute;
+  content: "程式技能";
+  width: 150%;
+  height: 60px;
+  background-color: #c9bc99;
+  transform: rotate(-40deg)  translateY(-20px);
+  line-height: 1.75;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  color: #eee;
+  letter-spacing: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.programs .title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #c9bc99;
+  z-index: 1;
+  box-shadow: 290px -230px #c9bc99;
+}
+.programs .bar {
+  width: 40%;
+}
+.bar li p{
+  padding-left: 50px;
+}
+.bar .scroll {
+  text-align: right;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 20px;
+}
+
+.html-bar, .py-bar, .c-bar, .java-bar {
+  width: 5%;
+  background-color: #dacdaa;
+  animation: 5s infinite;
+}
+
+.html-bar { 
+  animation-name: html-bar; 
+}
+@keyframes html-bar {
+  from {
+      width: 5%;
+  }
+  to {
+      width: 75%;
+  }
+}
+
+.py-bar { 
+  animation-name: py-bar; 
+}
+@keyframes py-bar {
+  from {
+      width: 5%;
+  }
+  to {
+      width: 65%;
+  }
+}
+
+.c-bar { 
+  animation-name: c-bar; 
+}
+@keyframes c-bar {
+  from {
+    width: 5%;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+.java-bar { 
+  animation-name: java-bar; 
+}
+@keyframes java-bar {
+  from {
+      width: 5%;
+  }
+  to {
+      width: 60%;
+  }
+}
+
+.programs .text {
+  width: 40%;
+  margin-top: 20px;
+}
+.programs .text li {
+  text-align: justify;
+  padding: 15px 0;
+}

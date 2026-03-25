@@ -1,0 +1,57 @@
+.specialty {
+    display: flex;
+    /* 核心修正：讓 H2 和 .specialty-grid 垂直堆疊 */
+    flex-direction: column; 
+    
+    /* 讓內容在容器內居中，但標題會佔據 100% 寬度 */
+    align-items: center; 
+    
+    /* 標題與四欄區塊之間的間距 */
+    gap: 30px; 
+    
+    padding: 50px;
+    width: 100%; /* 確保它能延伸到 .wrap 的邊界 */
+}
+
+/* 2. 設置標題樣式 */
+.section-title {
+    width: 100%; /* 確保標題佔據整行 */
+    text-align: center; /* 文字居中 */
+    font-size: 36px;
+    margin: 0;
+    /* 這裡可以設置您想要的標題樣式，例如顏色、字體等 */
+}
+
+/* 3. 新增 .specialty-grid：創建四欄水平佈局 */
+.specialty-grid {
+    display: flex;
+    width: 100%; /* 確保四欄佈局佔滿整個寬度 */
+    
+    /* 讓四個 <article> 平均分配空間 */
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+/* 4. 設置單個文章項目的樣式 (現在是對 .specialty-grid 內的 article 進行設定) */
+.specialty-grid article {
+    /* 讓每個 <article> 都能平均佔據剩餘空間 */
+    flex: 1; 
+    
+    max-width: 25%; 
+    text-align: center; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    min-height: 150px; 
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+.specialty-img{
+    max-width:300px; 
+    height: auto;
+    box-shadow: 1px 1px 3px 3px #ddd6f6;
+    transform: scale(1);
+    transition: 0.5s;
+}

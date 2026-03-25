@@ -1,0 +1,65 @@
+body{
+    margin: auto;
+    height: 100%;
+    /*background-color: #E6EAF2;*/
+    max-width: 1600px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/img/HAND.PNG');
+    background-position:right;
+    background-size: 150px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.gap {
+    width: 100%;
+    height: 40px;
+}
+
+.wrap {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 2px #ddd6f6;
+    position: relative;
+    padding: 50px;
+    max-width: 100%;
+    margin : auto;
+    max-width: 1400px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display:flex ;
+    /*display: grid;
+    3x3 grid
+    grid-template-columns: 1fr 1fr 1fr;*/
+    /*4x2 grid
+    grid-auto-flow: column;
+    grid-gap: 10px 10px;*/
+    justify-content: center; /* 水平居中 */
+    align-items: flex-start; /* 垂直頂部對齊 */
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrap {
+        margin: 20px 10px; 
+        padding: 20px;
+        width: 400px;
+    }
+}

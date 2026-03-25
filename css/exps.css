@@ -1,0 +1,226 @@
+.exps {
+    padding: 5px;
+    gap: 20px;
+    
+}
+
+.exps-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 30px;
+}
+
+.dashed{
+    border-bottom-style: dashed;
+    border-color: grey;
+}
+
+.exps-article{
+    float: left;
+    width: 70%;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+aside{
+    float: right;
+    width: 40%;
+    height: 400px;
+}
+
+.exps-img{
+    justify-content: flex-end; 
+    align-items: flex-end;
+    position: relative;
+    margin: 0;
+    width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 3px #ddd6f6;
+    transform: scale(1);
+    transition: 0.5s;
+    margin-bottom: 30px;
+    animation: fade-in-out 6s infinite;
+}
+
+.exps-img:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px 5px #261E47;
+    transition: 0.5s; 
+}
+
+.exps-img2{
+    justify-content: flex-end; 
+    align-items: flex-end;
+    position: relative;
+    margin: 0;
+    width: 450px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 3px #ddd6f6;
+    transform: scale(1);
+    transition: 0.5s;
+    margin-bottom: 30px;
+    opacity: 0; 
+    animation: fade-in-out 6s infinite;
+}
+
+.exps-img2:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px 5px #261E47;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+@keyframes fade{
+    0%{ opacity: 1;}
+    33%{ opacity: 0;}
+    34%{ opacity: 1;}
+    66%{ opacity: 0;}
+    67%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+
+.exps-club{
+    font-family: 思源黑體;
+    font-weight: bold ;
+    color: #3b5571;
+    font-size: 32px;
+    width: 20%;
+    margin-left:500px;
+    margin-bottom: 0px;
+}
+
+.exps-work{
+    font-family: 思源黑體;
+    font-weight: bold ;
+    color: #3b5571;
+    font-size: 32px;
+    width: 20%;
+    margin-left:340px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+.exps-class{
+    font-family: 思源黑體;
+    font-weight: bold ;
+    color: #3b5571;
+    font-size: 32px;
+    width: 20%;
+    margin-left:500px;
+    margin-bottom: 0px;
+    padding-top: 10px;  
+}
+
+.exps p{
+    text-align: justify;
+    line-height: 2;
+}
+
+.exps-headerclub{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 100%; 
+    margin-bottom: 20px;
+    gap: 5PX;
+}
+
+.exps-headerwork{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+.exps-headerclass{
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 100%; 
+    margin-bottom: 20px;
+    gap: 5PX;
+}
+
+.ig-link {
+    color: #4E4F97;
+    display: inline-block;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    transform: scale(1);
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+
+.ig-link:hover {
+    font-weight: 700;
+    transform: translateY(-5px);
+    background-color: #4E4F97;
+    border-radius: 15px;
+    color: white;
+}    
+
+button{
+    border: none;
+    border-radius: 15px;
+    color: #261E47;
+}
+
+button:hover{
+    background-color: transparent;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .exps-item {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 30px;
+    }
+    
+    .exps-article {
+        width: 100%; 
+        float: none; 
+        padding-left: 10px; 
+        padding-right: 10px; 
+        text-align: center; 
+    }
+    
+    aside {
+        width: 100%;
+        float: none; 
+        text-align: justify;
+    }
+    
+    .exps-img {
+        max-width: 90%; 
+        width: auto;
+        margin-bottom: 20px;
+        margin-left: 15px; 
+    }
+
+    .exps-club, .exps-work, .exps-class {
+        font-size: 24px;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .exps-headerclub, .exps-headerwork {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .exps p {
+        text-align: justify;
+    }
+}
