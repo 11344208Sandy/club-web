@@ -15,7 +15,7 @@ header{
 .WJN01{
     display: flex;
     text-align: left;
-    padding-left: 30px;
+    padding-left: 10px;
     font-family: 思源黑體;
     font-weight: 400;
     font-style: normal;
@@ -58,6 +58,15 @@ header .contact{
     width: 88px;
     display: flex;
     align-items: center;
+}
+
+header img{
+    transform: scale(1);
+    transition: 0.5s;
+    max-width: 20px; 
+    height: auto;
+    display: flex;
+    align-items: left;
 }
 
 
