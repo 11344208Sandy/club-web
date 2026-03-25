@@ -5,8 +5,9 @@ body{
     max-width: 1600px;
     align-items: center;
     justify-content: center;
-    background-image: url('../img/HAND.jpg');
+    background-image: url('../img/life.jpg');
     background-repeat: repeat;
+    background-attachment: fixed;
     background-position:right;
     background-size: 150px;
 }
