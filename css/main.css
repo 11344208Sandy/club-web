@@ -1,15 +1,28 @@
 body{
     margin: auto;
     height: 100%;
-    /*background-color: #E6EAF2;*/
+    background-color: #E6EAF2;
     max-width: 1600px;
     align-items: center;
     justify-content: center;
-    background-image: url('../img/life.jpg');
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 100%;
+    max-width: 1600px;
+    height: 100%;
+    background-image: url('../img/try.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
-    background-position:right;
-    background-size: 1000px;
+    background-size: 1550px;
+    opacity: 0.3;       
+    z-index: -1; 
+    pointer-events: none; 
 }
 
 *{

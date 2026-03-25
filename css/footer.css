@@ -111,6 +111,10 @@ footer{
     color: white ; 
     text-decoration: none;
 }
+.footer-bottom a:hover {
+    color: #76a8ff;
+    opacity: 1;
+}
 
 
 /* footer.css */
