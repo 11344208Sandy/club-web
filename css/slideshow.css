@@ -1,6 +1,6 @@
 .slideshow-container {
     width: 100%;
-    height: 630px;
+    height: 720px;
     margin: 0 auto;
     position: relative; /* 內部元素會根據此容器定位 */
     overflow: hidden;
