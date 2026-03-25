@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css"> 
+    <link rel="stylesheet" href="css/exps.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/programs.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/specialty.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="icon" href="img/club.png" />
+</head>
+<body>
+<!--header-->
+<header>
+    <nav>
+        <img src="../img/club.png" alt="club"/>
+        <h3 class="WJN01">CYCUEMC</h3>
+        <a href="Introduction.html">社團簡介</a>
+        <a href="First Aid Promotion.html">急救推廣</a>
+        <a href="Volunteer Services.html">志工服務</a>
+        <a href="Talent Education.html">人才培育</a>
+        <a href="Ambulance Practices.html">救護實踐</a>
+        <a href="Special Programs.html">特色活動</a>
+        <a href="Honors and Achievements.html">榮譽事蹟</a>
+        <a href="contat.html" class="contact">聯絡資訊</a>
+    </nav>
+</header>
+<!--照諞輪播-->
+<div class="slideshow-container">
+<div class="mySlides">          
+    <img src="img/emc01.jpg" style="width:100%">          
+</div>
+<div class="mySlides">          
+    <img src="img/emc02.jpg" style="width:100%">          
+</div>
+<div class="mySlides">         
+    <img src="img/emc03.jpg" style="width:100%">          
+</div>
+<div class="mySlides">         
+    <img src="img/emc04.jpg" style="width:100%">          
+</div>
+
+<!--左右按鈕-->
+<a class="prev" onclick="plusSlides(-1)"> ⇠ </a>
+<a class="next" onclick="plusSlides(1)"> ⇢ </a>
+</div>      
+
+<!--顯示圓點-->
+<div style="text-align: center;">
+<span class="dot" onclick="currentSlides(0)"></span>
+<span class="dot" onclick="currentSlides(1)"></span>
+<span class="dot" onclick="currentSlides(2)"></span>
+<span class="dot" onclick="currentSlides(3)"></span>
+</div>
+
+
+<script>
+var slideIndex = 0;
+var timer = null;
+
+// 初始化：顯示第一張並開啟自動播放
+showSlides(slideIndex);
+startTimer();
+
+// 左右按鈕控制
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+    startTimer(); // 點擊後重新計時，避免剛點完就馬上跳下一張
+}
+
+// 圓點控制
+function currentSlides(n) {
+    showSlides(slideIndex = n);
+    startTimer();
+}
+
+function showSlides(n) {
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+
+    // 處理索引邊界
+    if (n >= slides.length) { slideIndex = 0; }
+    if (n < 0) { slideIndex = slides.length - 1; }
+
+    // 隱藏所有照片
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    // 移除所有圓點的 active 狀態
+    for (var i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    // 顯示當前照片並激活圓點
+    slides[slideIndex].style.display = "block";
+    if (dots[slideIndex]) { // 防止點擊超出範圍
+        dots[slideIndex].className += " active";
+    }
+}
+// 自動播放邏輯
+function startTimer() {
+    clearTimeout(timer); // 清除舊的計時器
+    timer = setTimeout(function() {
+        showSlides(slideIndex += 1); // 自動下一張
+        startTimer(); // 遞歸調用，持續播放
+    }, 4000); // 設定 4 秒換一張
+} 
+</script>
+
+
+<!--footer-->
+<div class="clearfix"></div>
+<footer id="footer">
+<div class="footer-container">
+    <div class="footer-logo">
+        <img src="../img/club.png" alt="Logo">
+        <p>讓急救意識 成為全民共識</p>
+        <p>讓所有人「 敢救、會救 」</p>
+    </div>
+    <div class="footer-links">
+        <h3>連結</h3>
+        <a href="shop.html">商品列表</a>
+        <a href="about.html">關於我們</a>
+        <a href="info.html">品牌理念</a>
+    </div>
+    <div class="footer-contact">
+        <h3>聯絡我們</h3>
+        <p>Add: 320桃園市中壢區中北路200號</p>
+        <p>Email: cycuemc@gmail.com</p>
+        <p>Tel: 0909654372</p>
+    </div>
+</div>
+<div class="footer-policy-links">
+    <a href="html/Honors and Achievements.html">影音內容</a>
+    <a href="html/Honors and Achievements.html">更多活動</a>
+    <a href="html/Honors and Achievements.html">常見問題</a>
+</div>
+<div class="footer-bottom">
+    <p>&copy; 2026 中原大學緊急醫療救護社. Designed by Jenen Wu. All rights reserved.</p>
+    <a href="#top">回頂端</a>
+</div>
+</footer>
+</body>
+</html>
