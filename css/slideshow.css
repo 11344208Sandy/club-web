@@ -1,16 +1,17 @@
 .slideshow-container {
     width: 100%;
-    height: 670px;
+    height: 700px;
     margin: 0 auto;
-    position: relative; /* 內部元素會根據此容器定位 */
+    padding-top: 50px;
+    position: relative;
     overflow: hidden;
     background-color: #f0f0f0; /* 防止圖片加載前空白 */
 }
-/*按鍵設計*/
+
 .prev, .next{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-20%);
     padding: 20px;
     width: auto;
     color: white;
@@ -26,9 +27,9 @@
     right: 0px;
 }
 
-/*滑鼠在按鈕上並改變顏色*/
 .prev:hover, .next:hover{
     font-size: 50px;
+    transform: translateY(-30%);
 }
 
 /* 讓圖片容器撐滿 */
@@ -41,15 +42,14 @@
 .mySlides img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /*確保圖片比例正確且填滿容器 */
+    object-fit: cover; 
 }
 
-/* 圓點容器間距 */
 .dot-container {
     position: absolute;
-    bottom: 15px; /* 距離底部 15px */
+    bottom: 15px; 
     left: 50%;
-    transform: translateX(-50%); /* 水平居中 */
+    transform: translateX(-50%); 
     text-align: center;
 }
 
@@ -69,7 +69,6 @@
     background-color: #2A3C59; 
 }
 
-/* 淡入動畫 */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
