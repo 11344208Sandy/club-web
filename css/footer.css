@@ -3,17 +3,17 @@ footer{
     color: white;
     max-width: 1600px;
     width: 100%;
-    padding: 60px 20px 30px;
+    padding: 40px 10px 20px;
     margin: 0 auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     gap: 30PX;
-    font-family:  'Mukta', 'Noto Serif JP', sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; 
@@ -31,7 +31,7 @@ footer{
     text-align: left;
 }
 .footer-logo img {
-    height: 40px;
+    height: 30px;
     margin-bottom: 15px;
 }
 .footer-logo p {
@@ -76,7 +76,7 @@ footer{
 .footer-contact p {
     font-size: 14px;
     opacity: 0.9;
-    line-height: 2;
+    line-height: 2.4;
     margin: 0;
 }
 
