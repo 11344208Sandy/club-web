@@ -57,14 +57,8 @@ main{
     max-width: 1400px;
     margin: 0 auto;
     display:flex ;
-    /*display: grid;
-    3x3 grid
-    grid-template-columns: 1fr 1fr 1fr;*/
-    /*4x2 grid
-    grid-auto-flow: column;
-    grid-gap: 10px 10px;*/
-    justify-content: center; /* 水平居中 */
-    align-items: flex-start; /* 垂直頂部對齊 */
+    justify-content: center;
+    align-items: flex-start; 
     flex-wrap: wrap;
     gap: 30px;
 }
