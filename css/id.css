@@ -42,6 +42,7 @@
     width: 95%;
 }
 .shortstory h1{
+    color: #920f0bfe;
     width: 100%;
     margin: 0px 40px 0px 0px;
     font-size: 40px;
@@ -61,4 +62,9 @@
 .shortstory h2{
     border-left: 6px solid #920F0B; 
     padding-left: 15px;
+    color: #2A3C59;
+    background-color: #879dc040;
+}
+.shortstory strong{
+    color: #920f0bfe;
 }
