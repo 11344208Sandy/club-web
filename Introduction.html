@@ -6,7 +6,7 @@
     <title>Introduction</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Noto+Serif+TC:wght@200..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/firstpage.css">
     <link rel="stylesheet" href="css/id.css"> 
@@ -26,100 +26,19 @@
     <nav>
         <img src="img/club.png" alt="club"/>
         <h3 class="WJN01">CYCUEMC</h3>
-        <a href="Introduction.html">社團簡介</a>
+        <a href="Introduction.html" class="different">社團簡介</a>
         <a href="FirstAidPromotion.html">急救推廣</a>
         <a href="VolunteerServices.html">志工服務</a>
         <a href="Talen Education.html">人才培育</a>
         <a href="AmbulancePractices.html">救護實踐</a>
         <a href="SpecialPrograms.html">特色活動</a>
         <a href="HonorsandAchievements.html">榮譽事蹟</a>
-        <a href="contat.html" class="contact">聯絡資訊</a>
+        <a href="contat.html" >聯絡資訊</a>
     </nav>
 </header>
-<!--照諞輪播-->
-<div class="slideshow-container">
-<div class="mySlides">          
-    <img src="img/emc01.jpg" style="width:100%">          
-</div>
-<div class="mySlides">          
-    <img src="img/emc02.jpg" style="width:100%">          
-</div>
-<div class="mySlides">         
-    <img src="img/emc03.jpg" style="width:100%">          
-</div>
-<div class="mySlides">         
-    <img src="img/emc04.jpg" style="width:100%">          
-</div>
 
-<!--左右按鈕-->
-<a class="prev" onclick="plusSlides(-1)"> ⇠ </a>
-<a class="next" onclick="plusSlides(1)"> ⇢ </a>
-</div>      
-
-<!--顯示圓點
-<div style="text-align: center;">
-<span class="dot" onclick="currentSlides(0)"></span>
-<span class="dot" onclick="currentSlides(1)"></span>
-<span class="dot" onclick="currentSlides(2)"></span>
-<span class="dot" onclick="currentSlides(3)"></span>-->
-</div>
-
-
-<script>
-var slideIndex = 0;
-var timer = null;
-
-// 初始化：顯示第一張並開啟自動播放
-showSlides(slideIndex);
-startTimer();
-
-// 左右按鈕控制
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-    startTimer(); // 點擊後重新計時，避免剛點完就馬上跳下一張
-}
-
-// 圓點控制
-function currentSlides(n) {
-    showSlides(slideIndex = n);
-    startTimer();
-}
-
-function showSlides(n) {
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-
-    // 處理索引邊界
-    if (n >= slides.length) { slideIndex = 0; }
-    if (n < 0) { slideIndex = slides.length - 1; }
-
-    // 隱藏所有照片
-    for (var i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    // 移除所有圓點的 active 狀態
-    for (var i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    // 顯示當前照片並激活圓點
-    slides[slideIndex].style.display = "block";
-    if (dots[slideIndex]) { // 防止點擊超出範圍
-        dots[slideIndex].className += " active";
-    }
-}
-// 自動播放邏輯
-function startTimer() {
-    clearTimeout(timer); // 清除舊的計時器
-    timer = setTimeout(function() {
-        showSlides(slideIndex += 1); // 自動下一張
-        startTimer(); // 遞歸調用，持續播放
-    }, 4000); // 設定 4 秒換一張
-} 
-</script>
 <main><!--css:main、id-->
-    
+<h1 class="hh1">社團簡介</h1>    
 
 </main>
 
