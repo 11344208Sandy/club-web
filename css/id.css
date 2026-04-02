@@ -1,4 +1,29 @@
-.hh1{
+.id {
+    max-width: 1600px;
     color: #920F0B;
-    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    text-shadow: 5px 10px 5px rgba(93, 89, 89, 0.2);
+    margin-top: 50px;
+    padding: 0 5%;
+    gap: 60px;
 }
+
+.id h1{
+    width: 100%;
+    margin: 0px 40px 0px 0px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.id p{
+    max-width: 900px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    word-break: break-all;
+}
+.id img{
+    width: 100%; 
+    border-radius: 15px;
+} 
+
