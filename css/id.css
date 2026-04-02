@@ -21,9 +21,44 @@
     color: #333;
     line-height: 1.8;
     word-break: break-all;
+    text-align: justify;
 }
 .id img{
     width: 100%; 
     border-radius: 15px;
+    width: 600px;
 } 
+.id h4{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+.shortstory{
+    max-width: 1600px;
+    color: #403a3a;
+    text-shadow: 5px 10px 5px rgba(93, 89, 89, 0.2);
+    border-top: 2px dashed #b8b7b7;
+    width: 95%;
+}
+.shortstory h1{
+    width: 100%;
+    margin: 0px 40px 0px 0px;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.shortstory p{
+    max-width: 1600px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    word-break: break-all;
+    text-align: justify;
+}
+.shortstory h2{
+    border-left: 6px solid #920F0B; 
+    padding-left: 15px;
+}
