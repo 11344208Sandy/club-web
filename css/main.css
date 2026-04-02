@@ -52,7 +52,7 @@ body::before {
 }
 
 main{
-    padding: 40px 20px;
+    padding: 40px 10px;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
