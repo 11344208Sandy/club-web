@@ -166,6 +166,7 @@
     color: #333;
     margin-bottom: 10px;
     border-bottom: 2px dashed #b8b7b7;
+    width: 90%;
 }
 .course-title:hover {
     color: #920F0B;
