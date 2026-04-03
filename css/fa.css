@@ -1,3 +1,7 @@
+/*預留空間*/
+[id^="FA"] {
+    scroll-margin-top: 80px;
+}
 /*標題旁邊的紅色線*/
 .red-title {
     border-left: 6px solid #920F0B;
@@ -35,6 +39,9 @@
     list-style: none;
     padding: 0;
     margin-top: 20px;
+    background-color: #fcfcfca7;
+    padding: 0 20px;
+    border-radius: 10px;
 }
 .FA-list li {
     border-bottom: 1px dashed #ccc;
@@ -62,6 +69,9 @@
 /*中間簡單說明文字*/
 .FA-word {
     border-top: 2px dashed #b8b7b7;
+    background-color: #fcfcfca7;
+    padding: 0 20px;
+    border-radius:  10px;
 }
 .FA-word p{
     font-size: 18px;
@@ -76,7 +86,9 @@
     max-width: 1600px;
     width: 1400px;
     margin: 0;
-    padding: 0;
+    background-color: #fcfcfca7;
+    padding: 0 20px;
+    border-radius: 10px;
 }
 /*下方活動區塊*/
 .FA-item-group {
@@ -89,7 +101,7 @@
 /*下方活動圖片+文字區塊*/
 .FA-item-body {
     display: flex;
-    align-items: flex-start; 
+    align-items:center; 
     gap: 50px;
 }
 /*下方活動照片輪播*/
@@ -98,7 +110,7 @@
     position: relative;
     overflow: hidden; 
     width: 100%;
-    aspect-ratio: 16 / 9; 
+    height: 370px;
     border-radius: 15px;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
     background-color: #f0f0f0; 
@@ -132,11 +144,12 @@
 }
 .FA-item-text p {
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 2;
     color: #333;
     text-align: justify;
     margin: 0;
 }
+
 
 @keyframes autoPlay {
     0% { opacity: 0; }
