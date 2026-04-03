@@ -31,7 +31,7 @@ header nav a{
     padding: 14px 16px ;
 }
 header nav a:hover {
-    font-weight: 700;
+    font-weight: 700px;
     transform: translateY(-5px);
     background-color: #9f3434;
     border-radius: 10px;
@@ -57,11 +57,11 @@ header img{
 .WJN01{
     display: flex;
     text-align: left;
-    padding-left: 10px;
     font-weight: 400;
-    font-style: normal;
     margin-right: auto;
-    font-size: 16px;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 14px 16px ;
 }
 /*照片輪播設計*/
 .slideshow-container {
@@ -71,7 +71,7 @@ header img{
     padding-top: 50px;
     position: relative;
     overflow: hidden;
-    background-color: #f0f0f0; /* 防止圖片加載前空白 */
+    background-color: #f0f0f0;
 }
     /*按鈕*/
     .prev, .next{
@@ -257,10 +257,10 @@ footer{
 }
 /*卡片照片設計*/
 .xn{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 40%; 
+    border-radius: 10%; 
     margin-bottom: 5px;
 }
 /*四宗旨+特+榮文字設計*/

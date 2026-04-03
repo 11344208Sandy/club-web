@@ -36,7 +36,7 @@
 
 .shortstory{
     max-width: 1600px;
-    color: #403a3a;
+    color: #2e2828;
     text-shadow: 5px 10px 5px rgba(93, 89, 89, 0.2);
     border-top: 2px dashed #b8b7b7;
     width: 95%;
@@ -55,9 +55,11 @@
 .shortstory p{
     max-width: 1600px;
     font-size: 16px;
-    color: #333;
+    color: #434040;
     word-break: break-all;
     text-align: justify;
+    line-height: 1.8;
+    font-weight: bolder;
 }
 .shortstory h2{
     border-left: 6px solid #920F0B; 
