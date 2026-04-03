@@ -24,21 +24,23 @@
     text-align: justify;
     background-color: #fcfcfca7;
     border-radius: 15px;
-    height: 300px;
+    height: 330px;
     display: flex; 
     align-items: center;
     justify-content: center;
-    padding: 0 10px;
+    padding: 15px 25px;
+    margin-bottom: 0px;
 }
 .id img{
     width: 100%; 
     border-radius: 15px;
-    width: 600px;
+    width: 610px;
 } 
 .id h4{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 15px;
 }
 
 .shortstory{
