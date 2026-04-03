@@ -10,6 +10,8 @@
     line-height: 1.2;
     color: #920F0B;
     margin-top: 0px 0px 0px 10px;
+    cursor: pointer;
+    user-select: none;
 }
 /*上方簡介容器*/
 .FA-container {
@@ -149,7 +151,29 @@
     text-align: justify;
     margin: 0;
 }
-
+/*小小標題的文字收納*/
+.course-title {
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px dashed #b8b7b7;
+}
+.course-title:hover {
+    color: #920F0B;
+    font-size: 18px;
+}
+/* 內容預設隱藏 */
+.course-content {
+    display: none; 
+    margin-top: 15px;
+    padding-left: 10px;
+    border-left: 2px solid #ccc;
+}
+/* 展開時顯示 */
+.course-content.show {
+    display: block;
+}
 
 @keyframes autoPlay {
     0% { opacity: 0; }
