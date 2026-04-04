@@ -1,0 +1,44 @@
+.vs{
+    max-width: 1600px;
+    color: #920F0B;
+    display: flex;
+    align-items: flex-start;
+    text-shadow: 5px 10px 5px rgba(93, 89, 89, 0.2);
+    margin-top: 50px;
+    padding: 0 5%;
+    gap: 60px;
+}
+.vs h1{
+    width: 100%;
+    margin: 0px 40px 0px 0px;
+    font-size: 40px;
+    font-weight: bolder;
+    border-left: 6px solid #920F0B;
+    padding-left: 15px;
+}
+.vs h4{
+    margin: 0px;
+    margin-left: 20px;
+    color: #920F0B;
+}
+.vs p{
+    max-width: 900px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    word-break: break-all;
+    text-align: justify;
+    background-color: #fcfcfca7;
+    border-radius: 15px;
+    height: 330px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    margin-bottom: 0px;
+}
+.vs img{
+    width: 100%; 
+    border-radius: 15px;
+    width: 610px;
+} 
