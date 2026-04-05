@@ -1,0 +1,133 @@
+/* 容器*/
+.TE-section {
+    display: flex;
+    align-items: center;
+    max-width: 1600px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+/*標題與說明*/
+.TE-content-wrapper {
+    flex: 1.2;
+    z-index: 2;         
+    position: relative;
+    margin-right: -60px; 
+}
+/*標題*/
+.TE-content-wrapper h1{
+    width: 100%;
+    color: #920F0B;
+    margin: 0px 0px 0px 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    border-left: 6px solid #920F0B;
+    padding-left: 15px;
+    text-shadow: 5px 10px 5px rgba(93, 89, 89, 0.2);
+}
+.TE-content-wrapper h4{
+    margin: 0px 40px 15px 40px;
+    color: #920F0B;
+}
+/*說明的框框*/
+.TE-text-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.8;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1); 
+}
+.TE-text-box p {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8;
+}
+/*圖片*/
+.TE-image-wrapper {
+    flex: 1;
+    z-index: 1; 
+}
+.TE-image-wrapper img {
+    width: 700px;
+    display: block;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+/*下面的活動 */
+.TE-item-group {
+    width: 100%;
+    border-top: 2px dashed #b8b7b7;
+}
+.TE-activity-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 50px;
+    border-bottom: 2px dashed #b8b7b7; 
+}
+/*左側文字*/
+.TE-text-side {
+    flex: 1; 
+}
+.TE-text-side h2{
+    color: #2A3C59;
+    border-left: 6px solid #920F0B;
+    padding-left: 15px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.TE-description {
+    background-color: #fcfcfca7;
+    padding: 25px;
+    border-radius: 15px;
+    line-height: 1.8;
+}
+.TE-description p {
+    margin: 0;
+    text-align: justify;
+    font-size: 18px;
+    color: #333;
+    line-height: 2;
+}
+/*右側四格圖片*/
+.TE-image-grid {
+    flex: 1; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    margin-bottom: 40px;
+}
+.TE-image-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+    .TE-section {
+        flex-direction: column;
+    }
+    .TE-content-wrapper {
+        margin-right: 0;
+        margin-bottom: -40px; 
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .TE-activity-item {
+        flex-direction: column;
+    }
+    .TE-image-grid {
+        width: 100%;
+    }
+}
