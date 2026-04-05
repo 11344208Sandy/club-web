@@ -97,14 +97,13 @@
 }
 /*右側四格圖片*/
 .TE-image-grid {
-    flex: 1; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px; 
     margin-bottom: 40px;
 }
 .TE-image-grid img {
-    width: 100%;
+    width: 200px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 8px;
