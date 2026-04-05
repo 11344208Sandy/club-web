@@ -61,7 +61,7 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    padding: 45px; /
+    padding: 10px 45px 10px 45px; 
 }
 
 .AP-item h2{
@@ -69,7 +69,7 @@
     border-left: 6px solid #920F0B;
     padding-left: 15px;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin: 0px 0px 10px 0px;
     font-weight: bold
 }
 .AP-item p {
