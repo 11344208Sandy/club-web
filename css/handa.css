@@ -145,7 +145,7 @@
 .handa-body {
     display: flex;
     align-items:center; 
-    gap: 50px;
+    gap: 40px;
 }
 /*下方活動文字說明*/
 .handa-text {
