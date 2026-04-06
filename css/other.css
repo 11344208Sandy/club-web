@@ -1,0 +1,134 @@
+/*in*/
+.in {
+    max-width: 1600px;
+    color: #920F0B;
+    display: flex;
+    align-items: flex-start;
+    text-shadow: 5px 10px 5px rgba(93, 89, 89, 0.2);
+    margin-top: 50px;
+    padding: 0 5%;
+    gap: 60px;
+}
+
+.in h1{
+    width: 100%;
+    margin: 0px 40px 0px 0px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.in p{
+    max-width: 900px;
+    font-size: 18px;
+    color: #333;
+    line-height: 2;
+    word-break: break-all;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    height: 450px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    margin: 0px;
+}
+.in h4{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+}
+/*ac*/
+.ac-red-title {
+    border-left: 6px solid #920F0B;
+    padding-left: 15px;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #920F0B;
+    margin-top: 0px 0px 0px 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.ac-detail {
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    width: 1400px;
+    margin-top: 50px;
+    background-color: #fcfcfca7;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+.ac-group {
+    width: 100%;
+    margin-bottom: 50px; 
+}
+.ac-group h2{
+    color: #2A3C59;
+}
+.ac-text {
+    flex: 1.3;
+}
+.ac-text p {
+    font-size: 18px;
+    line-height: 2;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+}
+.ac-item {
+    display: flex;
+    align-items:center; 
+    gap: 50px;
+}
+.ac-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0px 20px 10px 0px;
+    background-color: #920F0B;
+    padding: 10px;
+    border-radius: 20px;
+}
+.ac-item a:hover{
+    font-size: 24px;
+}
+.qu-text {
+    flex: 1.3;
+}
+.qu-text p {
+    font-size: 18px;
+    line-height: 2;
+    color: #333;
+    text-align: justify;
+    margin: 0px;
+    height: 500px;
+}
+.qu-title {
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px dashed #b8b7b7;
+    width: 100%;
+    font-size: 24px;
+}
+.qu-title:hover {
+    color: #920F0B;
+    font-size: 28px;
+}
+.qu-content {
+    display: none; 
+    margin: 15px 0px 20px 30px;
+    padding-left: 10px;
+    border-left: 2px solid #ccc;
+}
+.qu-content.show {
+    display: block;
+}
+.qu-content a{
+    text-decoration: none;
+    color: #920F0B;
+    font-weight: bold;
+}
