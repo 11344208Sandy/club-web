@@ -1,0 +1,134 @@
+.AP{
+    max-width: 1600px;
+    color: #920F0B;
+    display: flex;
+    align-items: flex-start;
+    text-shadow: 5px 10px 5px rgba(93, 89, 89, 0.2);
+    margin-top: 50px;
+    padding: 0 5%;
+    gap: 60px;
+}
+.AP h1{
+    width: 100%;
+    margin: 0px 40px 0px 0px;
+    font-size: 40px;
+    font-weight: bolder;
+    border-left: 6px solid #920F0B;
+    padding-left: 15px;
+}
+.AP h4{
+    margin: 0px;
+    margin-left: 20px;
+    color: #920F0B;
+}
+.AP p{
+    max-width: 900px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    word-break: break-all;
+    text-align: justify;
+    background-color:rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    height: 230px;
+    display: flex; 
+    align-items: center;
+    padding: 15px 25px;
+    margin-bottom: 0px;
+}
+.AP img{
+    width: 100%; 
+    border-radius: 15px;
+    width: 600px;
+} 
+
+/*主容器*/
+.AP-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1600px;
+    margin: 60px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.658);
+    border-radius: 15px;
+}
+
+/* 共通單元樣式 */
+.AP-item {
+    height: 380px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px 45px 10px 45px; 
+}
+
+.AP-item h2{
+    color: #2A3C59;
+    border-left: 6px solid #920F0B;
+    padding-left: 15px;
+    font-size: 30px;
+    margin: 0px 0px 10px 0px;
+    font-weight: bold
+}
+.AP-item p {
+    margin: 0PX 0PX 15PX 0PX;
+    color: #333;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8;
+}
+/*活動照片輪播*/
+.AP-item-img {
+    flex: 1;
+    position: relative;
+    overflow: hidden; 
+    padding: 0;
+}
+.AP-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0; 
+    animation: autoPlay 20s infinite; 
+}
+.AP-item-img img:nth-child(1) {
+    animation-delay: 0s;
+}
+.AP-item-img img:nth-child(2) {
+    animation-delay: 4s;
+}
+.AP-item-img img:nth-child(3) {
+    animation-delay: 8s;
+}
+.AP-item-img img:nth-child(4) {
+    animation-delay: 12s;
+}
+.AP-item-img img:nth-child(5) {
+    animation-delay: 16s;
+}
+
+@keyframes autoPlay {
+    0% { opacity: 0; }
+    4% { opacity: 1; }
+    20% { opacity: 1; }
+    24% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* 手機版：自動轉為單欄顯示 */
+@media (max-width: 768px) {
+    .AP-container {
+        grid-template-columns: 1fr;
+    }
+    .AP-item {
+        height: auto;
+        padding: 30px;
+    }
+    /* 手機版讓圖片區有固定高度，不然圖片會消失 */
+    .AP-pic-box {
+        height: 300px;
+    }
+}
