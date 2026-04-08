@@ -90,11 +90,6 @@
           slides[i].style.display = "none";
       }
 
-      // 移除所有圓點的 active 狀態
-      for (var i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-
       // 顯示當前照片並激活圓點
       slides[slideIndex].style.display = "block";
       if (dots[slideIndex]) { // 防止點擊超出範圍
