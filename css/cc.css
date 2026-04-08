@@ -1,0 +1,111 @@
+/*外層容器*/
+.cc{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px auto;
+    max-width: 1600px;
+    padding: 0 20px;
+}
+/*卡片設計*/
+.cc-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    overflow: hidden;
+    width: 350px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+.cc-card:hover {
+    transform: translateY(-10px); 
+}
+/*Qrrrrr區域*/
+.cc-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*文字*/
+.cc-info{
+    padding: 10px 25px 25px 25px; 
+}
+.cc-qr {
+    font: bold 22px "Oswald", sans-serif;
+    color: #920F0B;
+    margin: 0px 0px 10px 0px;
+    font-size: 26px;
+}
+.cc-text {
+    font-weight: bold;
+    color: #2A3C59;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+/* 互動按鈕 */
+.cc-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #920F0B;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px; /* 膠囊形狀按鈕 */
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.cc-btn:hover {
+    background: #b3120e;
+}
+/*下方連結*/
+.cc-extra {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1600px;
+    margin: 0px auto 80px;
+}
+.cc-item {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px; 
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+.cc-item:hover {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transform: translateY(-5px);
+}
+.cc-item h3{
+    color: #920F0B;
+    margin: 5px auto 10px;
+    font-size: 18px;
+}
+.cc-item p {
+    color: #333;
+    margin-bottom: 20px;
+    height: 50px; 
+    font-size: 16px;
+}
+.cc-item a {
+    color: #920F0B;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #920F0B;
+    margin: 0px 10px;
+}
+.cc-item img{
+    width: 50px;
+}
+
+/* 響應式：手機版改為垂直排列 */
+@media (max-width: 768px) {
+    .cc-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
