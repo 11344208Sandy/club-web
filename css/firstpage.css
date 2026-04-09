@@ -270,35 +270,63 @@ footer{
 
 
 
-
 @media screen and (max-width: 800px) {
     header {
-        height: 40px; 
+        height: auto; 
+        flex-direction: column; 
+        padding: 5px;
     }
-    .WJN01 {
-        font-size: 10px; 
-        padding-left: 5px;
+    header nav {
+        justify-content: center;
+        flex-wrap: wrap; 
     }
     header nav a {
-        font-size: 10px; 
-        padding-right: 5px; 
-        padding-left: 5px;
-        
+        font-size: 12px; 
+        padding: 8px 10px;
+        letter-spacing: 0;
     }
-    header .contact{
-        width: 60px;
-        align-items: center;
-        justify-content: center;
-    }
-    footer {
-        height: auto; 
-        padding: 10px 0;
-        flex-direction: column; 
-        gap: 10px; 
-    }
-    .WJN02 {
-        margin-right: 0; 
-        padding-left: 0px;
+    .WJN01 {
+        font-size: 12px;
+        padding: 5px;
+        margin: 5px auto; 
         text-align: center;
+    }
+    .slideshow-container {
+        height: 300px;
+        padding-top: 80px; 
+    }
+    .total {
+        flex: 0 1 100%;
+        min-width: unset; 
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .xn {
+        width: 100%; 
+        height: auto;
+        max-width: 250px; 
+    }
+    .footer-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-logo, .footer-links, .footer-contact {
+        flex: 1 1 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .footer-contact {
+        text-align: center;
+        align-items: center;
+    }
+    .footer-policy-links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .prev, .next {
+        font-size: 20px;
+        padding: 10px;
     }
 }
